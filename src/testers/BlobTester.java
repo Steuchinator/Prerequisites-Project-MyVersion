@@ -19,7 +19,7 @@ import classes.Blob;
 class BlobTester {
 
 	@Test
-	void testBlob() throws NoSuchAlgorithmException, IOException {
+	void test() throws NoSuchAlgorithmException, IOException {
 		Blob blob = new Blob("file.txt");
 		String Sha = blob.getSha1();
 		assertTrue(new File("tester/objects/" + Sha).exists());

@@ -27,7 +27,7 @@ class GitTest {
 	private static File f, fi, fil, file;
 	@Test
 	public void test() {
-		
+		assertTrue(true);
 	}
 	
 	@BeforeAll

@@ -14,13 +14,13 @@ public class Tree2 {
 		String sha1 = encryptThisString(generateString(arr));
 		
 		File file = new File(sha1);
-		FileWriter fw = new FileWriter(file);
-		BufferedWriter bw = new BufferedWriter(fw);
+//		FileWriter fw = new FileWriter(file);
+		BufferedWriter bw = new BufferedWriter(new FileWriter(file));
 		for (String str: arr) {
 			bw.write(str);
 			bw.newLine();
 		}
-		fw.close();
+//		fw.close();
 		bw.close();
 	}
 	

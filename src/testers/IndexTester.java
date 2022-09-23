@@ -14,8 +14,7 @@ class IndexTester {
 	
 	
 	@Test
-	
-	void testIndex() throws Exception {
+	void test() throws Exception {
 		Index index = new Index();
 		index.initialize();
 		
